@@ -3,15 +3,20 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Allergy Site</title>
+
+@*Styles*@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
+    @*navigation bar*@
     <div id="navbar-color" class="navbar navbar-inverse navbar-fixed-top">
         <div class="">
             <div class="navbar-header">
+                
+    @*Button for Mobile collapse*@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -19,13 +24,19 @@
                     <span class="icon-bar"></span>
                 </button>
                 @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" style="color:lightgoldenrodyellow;">AllergySite</a>*@
+                
+    @*Site Name Dropdown menu*@
+                @*Main menu button*@
                 <button class="navbar-brand dropdown-toggle" data-toggle="dropdown" style="background-color:navy; font-size:22px; font-style:italic; font-weight:600; color:lightgoldenrodyellow;">
                     AllergySite<span class="caret"></span>
                 </button>
+                
+    @*Dropdown Menu using JQuery*@
                 <ul class="dropdown-menu" style="background-color: navy;">
                     <li><a href="/Home/Index" style="color:lightgoldenrodyellow;">Home</a></li>
                     <li><a href="/Home/About" style="color:lightgoldenrodyellow;">About</a></li>
-                    <li><a href="/Home/Physicians" style="color:lightgoldenrodyellow;">Physicians</a></li>
+                    <li><a href="/Home/Physicians" style="color:lightgoldenrodyellow;">Physicians</a></li>            
+    @*Dropdown menu using CSS hover*@
                     <li class="sub-menu">
                         <a href="#" style="color:lightgoldenrodyellow;">Conditions We Treat</a>
                         <ul>
@@ -38,7 +49,8 @@
                             <li><a style="color:lightgoldenrodyellow;" href="/conditions/venom">Venom or Insect Allergy</a></li>
                             <li><a style="color:lightgoldenrodyellow;" href="/conditions/anaphylaxis">Anaphylaxis</a></li>
                         </ul>
-                    </li>
+                    </li>                
+    @*Dropdown menu using CSS hover*@
                     <li class="sub-menu2">
                         <a href="#" style="color:lightgoldenrodyellow;">Patient Tutorials</a>
                         <ul>
@@ -53,22 +65,30 @@
                     <li><a href="/Home/Contact" style="color:lightgoldenrodyellow;">Contact Us</a></li>
                 </ul>
             </div>
+            
+    @*Collapsable nav bar for mobile*@ 
             <div class="navbar-collapse collapse">
+                @*Login Partial*@
                 @Html.Partial("_LoginPartial")
+                @*Call Link*@
                 <ul class="nav navbar-nav">
                     <li><a href"#" style="color:lightgoldenrodyellow; font-size: 24px; font-weight:600;">Call 303-717-9282 to Learn More</a></li>
                 </ul>
             </div>
         </div>
     </div>
+ @*Body Content*@
     <div class="body-content">
         @RenderBody()
+ 
+    @*Footer*@
         <hr />
         <footer>
             <p>&copy; 2017 - AllergySite</p>
         </footer>
     </div>
 
+@*Scripts*@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
