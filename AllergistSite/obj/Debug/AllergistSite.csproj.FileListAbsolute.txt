@@ -80,6 +80,7 @@ C:\Users\cog04\code\AllergySite\AllergistSite\AllergistSite\bin\Microsoft.Owin.S
 C:\Users\cog04\code\AllergySite\AllergistSite\AllergistSite\obj\Debug\AllergistSite.csprojResolveAssemblyReference.cache
 C:\Users\cog04\code\AllergySite\AllergistSite\AllergistSite\obj\Debug\AllergistSite.dll
 C:\Users\cog04\code\AllergySite\AllergistSite\AllergistSite\obj\Debug\AllergistSite.pdb
+C:\Users\cog04\code\AllergistSite\AllergistSite\bin\ApplicationInsights.config
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\csc.exe
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -92,7 +93,6 @@ C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\System.Reflection.Met
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\vbc.exe
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\VBCSCompiler.exe
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\cog04\code\AllergistSite\AllergistSite\bin\ApplicationInsights.config
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\AllergistSite.dll.config
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\AllergistSite.dll
 C:\Users\cog04\code\AllergistSite\AllergistSite\bin\AllergistSite.pdb
