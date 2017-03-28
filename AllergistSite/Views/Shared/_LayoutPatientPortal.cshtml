@@ -14,28 +14,69 @@
 
 </head>
 <body>
+    @*navigation bar*@
     <div id="navbar-color" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="">
             <div class="navbar-header">
+
+                @*Button for Mobile collapse*@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" style="color:lightgoldenrodyellow;">AllergySite</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" style="color:lightgoldenrodyellow;">AllergySite</a>*@
+
+                @*Site Name Dropdown menu*@
+                @*Main menu button*@
+                <button class="navbar-brand dropdown-toggle" data-toggle="dropdown" style="background-color:navy; font-size:22px; font-style:italic; font-weight:600; color:lightgoldenrodyellow;">
+                    AllergySite<span class="caret"></span>
+                </button>
+
+                @*Dropdown Menu using JQuery*@
+                <ul class="dropdown-menu" style="background-color: navy;">
                     <li><a href="/Home/Index" style="color:lightgoldenrodyellow;">Home</a></li>
                     <li><a href="/Home/About" style="color:lightgoldenrodyellow;">About</a></li>
                     <li><a href="/Home/Physicians" style="color:lightgoldenrodyellow;">Physicians</a></li>
-                    <li><a href="/Conditions/Index" style="color:lightgoldenrodyellow;">Conditions We Treat</a></li>
-                    <li><a href="/Home/Offices" style="color:lightgoldenrodyellow;">Offices</a></li>
+                    @*Dropdown menu using CSS hover*@
+                    <li class="sub-menu">
+                        <a href="#" style="color:lightgoldenrodyellow;">Conditions We Treat</a>
+                        <ul>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/allergicRhinitis">Allergic Rhinitis</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/nonallergicRhinitis">Non-Allergic Rhinitis</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/asthma">Asthma</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/sinusitus">Acute and Chronic Sinusitis</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/skinDisease">Allergic Skin Diseases</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/foodAllergy">Food Allergy</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/venom">Venom or Insect Allergy</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="/conditions/anaphylaxis">Anaphylaxis</a></li>
+                        </ul>
+                    </li>
+                    @*Dropdown menu using CSS hover*@
+                    <li class="sub-menu2">
+                        <a href="#" style="color:lightgoldenrodyellow;">Patient Tutorials</a>
+                        <ul>
+                            <li><a style="color:lightgoldenrodyellow;" href="~/Learning/EpiPen">Using an EpiPen auto-injector</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="~/Learning/AVQ">Using an Auvi-Q auto-injector</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="~/Learning/Inhaler">Using an inhaler</a></li>
+                            <li><a style="color:lightgoldenrodyellow;" href="~/Learning/Spacer">Using a spacer with an inhaler</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Home/Offices" style="color:lightgoldenrodyellow;">Locations</a></li>
                     @*<li><a asp-area="" asp-controller="Home" asp-action="PollenMap" style="color:white;">Pollen Map</a></li>*@
-                    <li><a href="/Home/Contact" style="color:lightgoldenrodyellow;">Contact</a></li>
+                    <li><a href="/Home/Contact" style="color:lightgoldenrodyellow;">Contact Us</a></li>
                 </ul>
-                <span style="float:right; margin-top: 15px; color:lightgoldenrodyellow;">guest@test.com</span>   
+            </div>
+
+            @*Collapsable nav bar for mobile*@
+            <div class="navbar-collapse collapse">
+                @*Login Partial*@
+                <span style="float:right; margin-top: 15px; color:lightgoldenrodyellow;">guest@test.com</span>
+                @*Call Link*@
+                <ul class="nav navbar-nav">
+                    <li><a href"#" style="color:lightgoldenrodyellow; font-size: 24px; font-weight:600;">Call 303-717-9282 to Learn More</a></li>
+                </ul>
             </div>
         </div>
     </div>

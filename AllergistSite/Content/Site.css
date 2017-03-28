@@ -1,4 +1,7 @@
-﻿body {
+﻿
+/*general classes*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     font-size: 18px;
@@ -9,6 +12,10 @@
     margin-right: 5%;
 }
 
+a {
+    color: black;
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
@@ -16,9 +23,13 @@
     padding-right: 15px;
 }
 
+/*navbar stlying*/ 
+
 .navbar-inverse {
     background-color: navy;
 }
+
+/*CSS Submenu classes*/
 
 .sub-menu ul {
     display: none;
@@ -79,6 +90,10 @@ textarea {
 
 
 /* Carousel */
+.item {
+    max-height: 550px;
+}
+
 .carousel-caption {
     top: 10%;
 }
@@ -99,6 +114,7 @@ textarea {
     .carousel-caption a {
         margin-top: 10%;
     }
+
 /* buttons and links extension to use brackets: [ click me ] */
 .btn-bracketed::before {
     display: inline-block;
@@ -110,10 +126,6 @@ textarea {
     display: inline-block;
     content: "]";
     padding-left: 0.5em;
-}
-
-.item {
-    max-height: 550px;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */
@@ -144,17 +156,6 @@ textarea {
     text-align: center
 }
 
-.card-img-top {
-    width: 100%;
-    border-radius: 5px 5px;
-}
-
-.card-img-left {
-    float: left;
-    border-radius: 5px 5px;
-    margin: 10px;
-}
-
 .card-1 {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -168,15 +169,6 @@ textarea {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 
-.card-menu {
-    width: 250px;
-}
-
-.colom-list {
-    list-style: none;
-    margin-left: -40px;
-}
-
 .card-large {
     width: 96%;
     text-align: left;
@@ -187,6 +179,28 @@ textarea {
     width: 48%;
     text-align: left;
     min-width: 550px;
+}
+
+.card-menu {
+    width: 250px;
+}
+
+/*Card image placement*/
+.card-img-top {
+    width: 100%;
+    border-radius: 5px 5px;
+}
+
+.card-img-left {
+    float: left;
+    border-radius: 5px 5px;
+    margin: 10px;
+}
+
+/*coloms*/
+.colom-list {
+    list-style: none;
+    margin-left: -40px;
 }
 
 .colom {
@@ -205,10 +219,7 @@ textarea {
     border-right: solid black 1px;
 }
 
-a {
-    color: black;
-}
-
+/*Centering*/
 .center {
     text-align: center;
     margin-right: 20%;
