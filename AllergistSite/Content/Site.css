@@ -16,6 +16,11 @@ a {
     color: black;
 }
 
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {

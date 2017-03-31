@@ -10,18 +10,41 @@
         <div class="panel panel-default">
             <div class="panel-heading noNote">
                 <div class="title-right"></div>
-                <div class="panel-title">My Documents</div>
+                <div class="panel-title">Patient Forms</div>
             </div>
-            <div class="panel-body overflowH">
+            <hr/>
+            <a href="~/documents/hb300_auth_form.pdf">
+                <div class="card card-2">
+                    <p style="text-decoration:underline">Patient Authorization Disclosure Form</p>
+                    <img class="card-img-top" src="~/Images/AuthorizationDisclosureForm.png" />
+                </div>
+            </a>
+            <a href="~/documents/New_Patient_Sheet.pdf">
+                <div class="card card-2">
+                    <p style="text-decoration:underline">New Patient Information Form</p>
+                    <img class="card-img-top" src="~/Images/NewPatientInfo.png" />
+                </div>
+            </a>
+            <a href="~/documents/notice.pdf">
+                <div class="card card-2">
+                    <p style="text-decoration:underline">Patient Privacy Notice Form </p>
+                    <img class="card-img-top" src="~/Images/PrivacyNotice.png" />
+                    </div>
+                </a>
+
+                @*For Document upload*@
+                @*<div class="panel-body overflowH">
                 <div class="form-horizontal group-border hover-stripped formView">
+
+
                     <div class="form-group">
                         <label for="exampleInputFile">File input</label>
                         <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
                         <small id="fileHelp" class="form-text text-muted">Upload patient documents here.</small>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>*@
+</div>
     </div>
 </div>
 
