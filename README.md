@@ -1,6 +1,6 @@
 # AllergistSite
 An example of a physician’s website. The application provides a user with access to general medical information and a patient portal where the user can view documents and request appointments. 
-### Live site: http:// allergistswebsite.apphb.com/ 
+### Live site: http://allergistswebsite.apphb.com/ 
 (the initial load may take some time as the site is hosted on a free hosting platform) 
  
 <img src="AllergistSite/Screenshots/AllergySite.png"/>
