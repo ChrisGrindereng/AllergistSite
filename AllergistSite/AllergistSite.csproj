@@ -219,8 +219,11 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\Allergy.jpg" />
+    <Content Include="Images\AuthorizationDisclosureForm.png" />
     <Content Include="Images\Clinic.jpg" />
     <Content Include="Images\dandelions.jpg" />
+    <Content Include="Images\NewPatientInfo.png" />
+    <Content Include="Images\PrivacyNotice.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
