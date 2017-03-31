@@ -182,8 +182,9 @@ textarea {
 
 .card-medium {
     width: 48%;
-    text-align: left;
+    text-align: center;
     min-width: 550px;
+    vertical-align: top;
 }
 
 .card-menu {
